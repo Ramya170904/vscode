@@ -190,7 +190,7 @@ export async function main(argv: string[]): Promise<any> {
 			// Write source to target
 			const data = readFileSync(source);
 			if (isWindows) {
-				// On Windows we use a different strategy of saving the file
+				// On Windows : we use a different strategy of saving the file
 				// by first truncating the file and then writing with r+ mode.
 				// This helps to save hidden files on Windows
 				// (see https://github.com/microsoft/vscode/issues/931) and
