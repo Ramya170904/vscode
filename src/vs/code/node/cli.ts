@@ -225,6 +225,7 @@ export async function main(argv: string[]): Promise<any> {
 
 		if (args.verbose) {
 			env['ELECTRON_ENABLE_LOGGING'] = '1';
+			
 		}
 
 		if (args.verbose || args.status) {
